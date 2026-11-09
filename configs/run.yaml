@@ -1,0 +1,19 @@
+run:
+  model: models/drone.pt
+  source: ""
+  device: cpu
+  confidence: 0.25
+  imgsz: 640
+  classes: null
+  show: false
+  save: true
+  output: outputs
+  draw_trail: true
+  box_only: false
+tracker:
+  type: bytetrack
+  track_high_thresh: 0.25
+  track_low_thresh: 0.10
+  new_track_thresh: 0.25
+  track_buffer: 30
+  match_thresh: 0.80
